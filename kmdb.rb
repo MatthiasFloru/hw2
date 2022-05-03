@@ -115,41 +115,11 @@ new_actor.save
 
 bale = Actor.find_by({ "name" => "Christian Bale" })
 
-new_role = Role.new
-new_role["movie_id"] = begins["id"]
-new_role["actor_id"] = bale["id"]
-new_role["character_name"] = "Bruce Wayne"
-new_role.save
-
-new_role = Role.new
-new_role["movie_id"] = knight["id"]
-new_role["actor_id"] = bale["id"]
-new_role["character_name"] = "Bruce Wayne"
-new_role.save
-
-new_role = Role.new
-new_role["movie_id"] = rises["id"]
-new_role["actor_id"] = bale["id"]
-new_role["character_name"] = "Bruce Wayne"
-new_role.save
-
 new_actor = Actor.new
 new_actor["name"] = "Michael Caine"
 new_actor.save
 
 caine = Actor.find_by({ "name" => "Michael Caine" })
-
-new_role = Role.new
-new_role["movie_id"] = begins["id"]
-new_role["actor_id"] = caine["id"]
-new_role["character_name"] = "Alfred"
-new_role.save
-
-new_role = Role.new
-new_role["movie_id"] = knight["id"]
-new_role["actor_id"] = caine["id"]
-new_role["character_name"] = "Alfred"
-new_role.save
 
 new_actor = Actor.new
 new_actor["name"] = "Liam Neeson"
@@ -157,23 +127,11 @@ new_actor.save
 
 neeson = Actor.find_by({ "name" => "Liam Neeson" })
 
-new_role = Role.new
-new_role["movie_id"] = begins["id"]
-new_role["actor_id"] = neeson["id"]
-new_role["character_name"] = "Ra's Al Ghul"
-new_role.save
-
 new_actor = Actor.new
 new_actor["name"] = "Katie Holmes"
 new_actor.save
 
 holmes = Actor.find_by({ "name" => "Katie Holmes" })
-
-new_role = Role.new
-new_role["movie_id"] = begins["id"]
-new_role["actor_id"] = holmes["id"]
-new_role["character_name"] = "Rachel Dawes"
-new_role.save
 
 new_actor = Actor.new
 new_actor["name"] = "Gary Oldman"
@@ -181,29 +139,11 @@ new_actor.save
 
 oldman = Actor.find_by({ "name" => "Gary Oldman" })
 
-new_role = Role.new
-new_role["movie_id"] = begins["id"]
-new_role["actor_id"] = oldman["id"]
-new_role["character_name"] = "Commissioner Gordon"
-new_role.save
-
-new_role = Role.new
-new_role["movie_id"] = rises["id"]
-new_role["actor_id"] = oldman["id"]
-new_role["character_name"] = "Commissioner Gordon"
-new_role.save
-
 new_actor = Actor.new
 new_actor["name"] = "Heath Ledger"
 new_actor.save
 
 ledger = Actor.find_by({ "name" => "Heath Ledger" })
-
-new_role = Role.new
-new_role["movie_id"] = knight["id"]
-new_role["actor_id"] = ledger["id"]
-new_role["character_name"] = "Joker"
-new_role.save
 
 new_actor = Actor.new
 new_actor["name"] = "Aaron Eckhart"
@@ -211,22 +151,11 @@ new_actor.save
 
 eckhart = Actor.find_by({ "name" => "Aaron Eckhart" })
 
-new_role = Role.new
-new_role["movie_id"] = knight["id"]
-new_role["actor_id"] = eckhart["id"]
-new_role["character_name"] = "Harvey Dent"
-new_role.save
-
 new_actor = Actor.new
 new_actor["name"] = "Maggie Gyllenhaal"
 new_actor.save
 
 gyllenhaal = Actor.find_by({ "name" => "Maggie Gyllenhaal" })
-
-new_role["movie_id"] = knight["id"]
-new_role["actor_id"] = gyllenhaal["id"]
-new_role["character_name"] = "Rachel Dawes"
-new_role.save
 
 new_actor = Actor.new
 new_actor["name"] = "Tom Hardy"
@@ -234,21 +163,11 @@ new_actor.save
 
 hardy = Actor.find_by({ "name" => "Tom Hardy" })
 
-new_role["movie_id"] = rises["id"]
-new_role["actor_id"] = hardy["id"]
-new_role["character_name"] = "Bane"
-new_role.save
-
 new_actor = Actor.new
 new_actor["name"] = "Joseph Gordon-Levitt"
 new_actor.save
 
 levitt = Actor.find_by({ "name" => "Joseph Gordon-Levitt" })
-
-new_role["movie_id"] = rises["id"]
-new_role["actor_id"] = levitt["id"]
-new_role["character_name"] = "John Blake"
-new_role.save
 
 new_actor = Actor.new
 new_actor["name"] = "Anne Hathaway"
@@ -256,6 +175,91 @@ new_actor.save
 
 hathaway = Actor.find_by({ "name" => "Anne Hathaway" })
 
+new_role = Role.new
+new_role["movie_id"] = begins["id"]
+new_role["actor_id"] = bale["id"]
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = begins["id"]
+new_role["actor_id"] = caine["id"]
+new_role["character_name"] = "Alfred"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = begins["id"]
+new_role["actor_id"] = neeson["id"]
+new_role["character_name"] = "Ra's Al Ghul"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = begins["id"]
+new_role["actor_id"] = holmes["id"]
+new_role["character_name"] = "Rachel Dawes"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = begins["id"]
+new_role["actor_id"] = oldman["id"]
+new_role["character_name"] = "Commissioner Gordon"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = knight["id"]
+new_role["actor_id"] = bale["id"]
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = knight["id"]
+new_role["actor_id"] = ledger["id"]
+new_role["character_name"] = "Joker"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = knight["id"]
+new_role["actor_id"] = eckhart["id"]
+new_role["character_name"] = "Harvey Dent"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = knight["id"]
+new_role["actor_id"] = caine["id"]
+new_role["character_name"] = "Alfred"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = knight["id"]
+new_role["actor_id"] = gyllenhaal["id"]
+new_role["character_name"] = "Rachel Dawes"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = rises["id"]
+new_role["actor_id"] = bale["id"]
+new_role["character_name"] = "Bruce Wayne"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = rises["id"]
+new_role["actor_id"] = oldman["id"]
+new_role["character_name"] = "Commissioner Gordon"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = rises["id"]
+new_role["actor_id"] = hardy["id"]
+new_role["character_name"] = "Bane"
+new_role.save
+
+new_role = Role.new
+new_role["movie_id"] = rises["id"]
+new_role["actor_id"] = levitt["id"]
+new_role["character_name"] = "John Blake"
+new_role.save
+
+new_role = Role.new
 new_role["movie_id"] = rises["id"]
 new_role["actor_id"] = hathaway["id"]
 new_role["character_name"] = "Selina Kyle"
@@ -271,7 +275,15 @@ puts "======"
 puts ""
 
 # Query the movies data and loop through the results to display the movies output.
-# TODO!
+all_movies = Movie.all
+for movie in all_movies
+    title = movie["title"]
+    year_released = movie["year_released"]
+    rated = movie["rated"]
+    studio = Studio.find_by({ "id" => movie["studio_id"] })
+    studio_name = studio["name"]
+    puts "#{title} #{year_released} #{rated} #{studio_name}"
+  end
 
 # Prints a header for the cast output
 puts ""
@@ -280,4 +292,13 @@ puts "========"
 puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie.
-# TODO!
+all_roles = Role.all
+for role in all_roles    
+    movie = Movie.find_by({ "id" => role["movie_id"] })
+    movie_title = movie["title"]
+    actor = Actor.find_by({ "id" => role["actor_id"] })
+    actor_name = actor["name"]
+    character_name = role["character_name"]
+    puts "#{movie_title} #{actor_name} #{character_name}"
+  end
+
